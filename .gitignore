@@ -23,7 +23,6 @@ bin/
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
 !**/src/test/**/out/
 
 ### NetBeans ###
@@ -39,9 +38,4 @@ out/
 # Ignore application.properties to prevent committing secrets
 src/main/resources/application.properties
 
-# Ignore .env file
-.env
 
-# .env
-GOOGLE_CLIENT_ID=338642491925-qg34s1slqkrd3a95il5ck1d7lbrju6jd.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
