@@ -38,3 +38,10 @@ out/
 
 ###소셜로그인
 application-oauth.properties
+
+# Ignore .env file
+.env
+
+# .env
+GOOGLE_CLIENT_ID=338642491925-qg34s1slqkrd3a95il5ck1d7lbrju6jd.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
