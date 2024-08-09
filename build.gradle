@@ -28,6 +28,7 @@ dependencies {
 	testImplementation("org.junit.vintage:junit-vintage-engine"){
 		exclude group: "org.hamcrest", module: "hamcrest-core"}
 	implementation('org.springframework.boot:spring-boot-starter-mustache')
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' //스프링시큐리티설정
 }
 
 tasks.named('test') {
