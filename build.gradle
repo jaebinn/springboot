@@ -29,6 +29,7 @@ dependencies {
 		exclude group: "org.hamcrest", module: "hamcrest-core"}
 	implementation('org.springframework.boot:spring-boot-starter-mustache')
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' //스프링시큐리티설정
+	implementation 'io.github.cdimascio:dotenv-java:3.0.0' // dotenv 라이브러리 추가
 }
 
 tasks.named('test') {
