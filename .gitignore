@@ -1,4 +1,4 @@
-HELP.md
+# Gradle 관련 파일 무시
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
@@ -35,13 +35,8 @@ out/
 ### VS Code ###
 .vscode/
 
-# Ignore application.properties to prevent committing secrets
+# 애플리케이션 프로퍼티 무시 (민감한 정보 보호)
 src/main/resources/application.properties
 
-
-# Ignore .env file to prevent committing secrets
+# .env 파일 무시 (민감한 정보 보호)
 .env
-
-#구글 클라이언트 & 비밀번호키
-GOOGLE_CLIENT_ID=338642491925-qg34s1slqkrd3a95il5ck1d7lbrju6jd.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=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
