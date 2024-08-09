@@ -36,8 +36,9 @@ out/
 ### VS Code ###
 .vscode/
 
-###소셜로그인
-application-oauth.properties
+
+# Ignore application.properties to prevent committing secrets
+src/main/resources/application.properties
 
 # Ignore .env file
 .env
