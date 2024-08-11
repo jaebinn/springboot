@@ -1,5 +1,6 @@
 package com.book.web;
 
+import com.book.config.auth.LoginUser;
 import com.book.config.auth.dto.SessionUser;
 import com.book.dto.PostsResponseDto;
 import com.book.service.posts.PostsService;
@@ -20,9 +21,9 @@ public class IndexController {
 
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(Model model, @LoginUser SessionUser user) {
         model.addAttribute("posts", postsService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+        //SessionUser user = (SessionUser) httpSession.getAttribute("user"); 이제 어느 컨트롤러든지 @LoginUser만 사용하면 세션정보 가져올 수 있음
         if(user != null) {
             model.addAttribute("userName", user.getName());
         }
