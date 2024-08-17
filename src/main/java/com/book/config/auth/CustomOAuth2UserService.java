@@ -19,9 +19,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import java.util.Collections;
-import java.util.Map;
 
-import static com.book.config.auth.dto.OAuthAttributes.ofGoogle;
 
 @Service
 @RequiredArgsConstructor

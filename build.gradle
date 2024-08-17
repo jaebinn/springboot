@@ -32,6 +32,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' //스프링시큐리티설정
 	implementation 'io.github.cdimascio:dotenv-java:3.0.0' // dotenv 라이브러리 추가
 	implementation 'org.springframework.session:spring-session-jdbc'
+	testImplementation("org.springframework.security:spring-security-test")
 }
 
 tasks.named('test') {
